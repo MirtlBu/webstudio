@@ -62,11 +62,12 @@ body {
 	padding: 0;
 }
 .promo-footer{
-	height: 30vh; 
+	height: 33vh; 
 	width: 100%;
 	position: absolute;
 	bottom: 0;
 	background: rgba(255,255,255,.5);
+	text-align: center;
 }
 .promo-footer a {
 	width: 25px;
@@ -74,7 +75,60 @@ body {
 	background: url(../img/arrow.png) no-repeat;
 	position: absolute;
 	bottom: 4%;
-	left: 50%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.gift-image {
+	width: 75px;
+	height: 65px;
+	border-radius: 50%;
+	background: #fdda00;
+	text-align: center;
+	padding-top: 10px;
+	position: absolute;
+	top: 1vh;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.gift-border {
+	border-bottom: 2px solid #fdda00;
+	border-right: 2px solid #fdda00;
+	border-left: 2px solid #fdda00;
+	display: inline-block;
+	position: relative;
+	font-size: 24px;
+	font-family: RobotoL;
+	color: #323232;
+	text-transform: uppercase;
+	line-height: 5vh;
+	padding: 6vh 3vw 3vh 3vw;
+	margin-top: 6vh;
+	clip: rect(10px,50px,50px,10px);
+	-webkit-font-smoothing: antialiased;
+}
+.gift-border:before {
+	content: '';
+	position: absolute;
+	width: 44%;
+	height: 2px;
+	background: #fdda00;
+	left: 0;
+	top: 0;
+}
+.gift-border:after {
+	content: '';
+	position: absolute;
+	width: 44%;
+	height: 2px;
+	background: #fdda00;
+	right: 0;
+	top: 0;
+}
+.gift-border span {
+	font-family: RobotoB;
 }
 .header {
 	height: 70px;
@@ -109,6 +163,18 @@ body {
 }
 .logo-wrap img {
 	padding: 14px 0;
+}
+.logo-description {
+	font-family: RobotoL;
+	font-size: 18px;
+	color: #43707e;
+	text-transform: uppercase;
+	float: right;
+	padding-top: 25px;
+	word-wrap: break-word;
+}
+.logo-description span {
+	font-family: RobotoB;
 }
 .list-item:nth-child(3n+2) {
 	margin: 0 4%;
