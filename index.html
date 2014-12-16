@@ -20,6 +20,14 @@
 	</script>
 </head>
 <body>
+	<div class="overlay">
+		<div class="popup">
+			<div class="popup-content">
+				<div class="popup-image"></div>
+				<a class="popup-close">×</a>
+			</div>
+		</div>
+	</div>
 	<div class="header">
 		<div class="es-container_12">
 			<div class="logo-wrap">
@@ -176,5 +184,26 @@
 	<div class="copyright es-container_full">
 		Epicsell 2013-2014
 	</div>
+	<script type="text/javascript">
+
+		function render(_id) {
+			return $('<img/>', {src: _id})
+		}
+
+		$(function() {
+			$('.market-list').on('click', '.market-item', function() {
+				var _id = $(this).find('img').attr('src').replace('.jpg', 'L.jpg');
+				$('.popup-image').append(render(_id));
+				$('body').addClass('scrolldisable');
+				$('.overlay').addClass('visible');
+				
+			});
+			$('.popup-close').on('click', function() {
+				$('.overlay').removeClass('visible');
+				$('body').removeClass('scrolldisable');
+				$('.popup-image').find('img').remove();
+			});
+		})
+	</script>
 </body>
 </html>
