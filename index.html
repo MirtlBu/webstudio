@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<script type="text/javascript" src="js/jquery-2.1.1.js"></script>	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		   $('a[href*=#]').bind("click", function(e){
+		      var anchor = $(this);
+		      $('html, body').stop().animate({
+		         scrollTop: $(anchor.attr('href')).offset().top
+		      }, 1000);
+		      e.preventDefault();
+		   });
+		   return false;
+		});
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="es-container_12">
+			<div class="logo-wrap">
+				<img src="img/logo.png" alt="EpicSell">
+			</div>
+			<button class="buy-btn buy-header">Заказать сайт</button>
+		</div>
+	</div>
+	<div class="promo es-container_full">
+		<div class="pattern">
+			<div class="es-container_12">
+				<div class="promo-wrap">
+					<h1>EpicSell web-studio</h1>
+					<div class="border"></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar consectetur quam in mollis. Integer fermentum odio ut commodo ornare. Fusce vel semper nunc. Nam pellentesque mi eu eros dignissim, sodales vestibulum nisi hendrerit. Sed eget lacus vitae nisi facilisis fermentum. Suspendisse pellentesque sapien nisl, sed sollicitudin elit tempor a.</p>
+					<div class="promo-button">
+						<button class="buy-btn buy-promo">Оставить заявку</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="promo-footer">
+			<a href="#go"></a>
+		</div>
+	</div>
+
+	<div class="es-container_full works-wrap" id="go">
+		<div class="works es-container_12">
+			<h2>Our work</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<div class="list">
+				<div class="list-item">
+					<div class="container-img">
+						<div></div>			
+						<img src="img/work.jpg">
+					</div>
+					
+					<h3>WebSite project 01</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar consectetur quam in mollis. Integer fermentum odio ut commodo ornare.</p>
+					<a href="#">Lanch project</a>
+				</div>
+				<div class="list-item">
+					<div class="container-img">
+						<div></div>			
+						<img src="img/work.jpg">
+					</div>
+					<h3>WebSite project 01</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar consectetur quam in mollis. Integer fermentum odio ut commodo ornare.</p>
+					<a href="#">Lanch project</a>
+				</div>
+				<div class="list-item">
+					<div class="container-img">
+						<div></div>			
+						<img src="img/work.jpg">
+					</div>
+					<h3>WebSite project 01</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar consectetur quam in mollis. Integer fermentum odio ut commodo ornare.</p>
+					<a href="#">Lanch project</a>
+				</div>
+				<div class="list-item">
+					<div class="container-img">
+						<div></div>			
+						<img src="img/work.jpg">
+					</div>
+					<h3>WebSite project 01</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar consectetur quam in mollis. Integer fermentum odio ut commodo ornare.</p>
+					<a href="#">Lanch project</a>
+				</div>
+				<div class="list-item">
+					<div class="container-img">
+						<div></div>			
+						<img src="img/work.jpg">
+					</div>
+					<h3>WebSite project 01</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar consectetur quam in mollis. Integer fermentum odio ut commodo ornare.</p>
+					<a href="#">Lanch project</a>
+				</div>
+				<div class="list-item">
+					<div class="container-img">
+						<div></div>			
+						<img src="img/work.jpg">
+					</div>
+					<h3>WebSite project 01</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar consectetur quam in mollis. Integer fermentum odio ut commodo ornare.</p>
+					<a href="#">Lanch project</a>
+				</div>
+			</div>
+			<button class="buy-btn buy-work">ЕЩЕ РАБОТЫ</button>
+		</div>
+	</div>
+	<div class="es-container_full market">
+		<div class="es-container_12">
+			<h2>MarketPlace</h2>
+			<div class="border"></div>
+			<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<div class="market-list">
+				<div class="market-item">	
+					<div class="container-market">
+						<div></div>			
+						<img src="img/work1.png">
+					</div>	
+					<h3>WebSite project 01</h3>
+				</div>
+				<div class="market-item">
+					<div class="container-market">
+						<div></div>			
+						<img src="img/work2.png">
+					</div>					
+					<h3>WebSite project 01</h3>
+				</div>
+				<div class="market-item">	
+					<div class="container-market">
+						<div></div>			
+						<img src="img/work3.png">
+					</div>	
+					<h3>WebSite project 01</h3>
+				</div>
+				<div class="market-item">	
+					<div class="container-market">
+						<div></div>			
+						<img src="img/work4.png">
+					</div>	
+					<h3>WebSite project 01</h3>
+				</div>			
+			</div>
+			<button class="buy-btn buy-market">ПЕРЕЙТИ В MARKETPLACE</button>
+		</div>
+	</div>
+	<div class="footer es-container_full">
+		<div class="es-container_12">
+			<h2>Заполните форму</h2>
+			<div class="border"></div>
+			<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<div class="contacts">
+				<div class="lcolumn">
+					<div class="phone">8 800 999 30 45</div>
+					<div class="address">Спиридоновка, 16, Москва</div>
+					<div class="email">test@test.test</div>
+				</div>
+				<div class="rcolumn">
+					<form>
+						<input type="text" placeholder="Ваше имя">
+						<input type="text" placeholder="Ваш телефон">
+						<input type="text" placeholder="Ваш e-mail (не обязательно)">
+						<textarea rows="4" placeholder="Текст вашего сообщения"></textarea>
+						<input type="submit" value="Отправить заявку">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright es-container_full">
+		Epicsell 2013-2014
+	</div>
+</body>
+</html>
