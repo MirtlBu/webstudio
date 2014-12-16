@@ -340,6 +340,7 @@ body {
 	padding-top: 10px;
 	border: 1px solid rgba(67,122,126,.11);
 	color: #323232;
+	resize: none;
 }
 .footer {
 	display: inline-block;
