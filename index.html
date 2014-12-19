@@ -65,7 +65,7 @@
 				<div class="list-item">
 					<div class="container-img">
 						<div></div>			
-						<img src="img/work.jpg">
+						<img src="img/work-1.jpg">
 					</div>
 					
 					<h3>WebSite project 01</h3>
@@ -75,13 +75,22 @@
 				<div class="list-item">
 					<div class="container-img">
 						<div></div>			
-						<img src="img/work.jpg">
+						<img src="img/work-2.jpg">
 					</div>
 					<h3>WebSite project 01</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar consectetur quam in mollis. Integer fermentum odio ut commodo ornare.</p>
 					<a href="#">Lanch project</a>
 				</div>
 				<div class="list-item">
+					<div class="container-img">
+						<div></div>			
+						<img src="img/work-3.jpg">
+					</div>
+					<h3>WebSite project 01</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar consectetur quam in mollis. Integer fermentum odio ut commodo ornare.</p>
+					<a href="#">Lanch project</a>
+				</div>
+				<!-- <div class="list-item">
 					<div class="container-img">
 						<div></div>			
 						<img src="img/work.jpg">
@@ -107,21 +116,12 @@
 					<h3>WebSite project 01</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar consectetur quam in mollis. Integer fermentum odio ut commodo ornare.</p>
 					<a href="#">Lanch project</a>
-				</div>
-				<div class="list-item">
-					<div class="container-img">
-						<div></div>			
-						<img src="img/work.jpg">
-					</div>
-					<h3>WebSite project 01</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar consectetur quam in mollis. Integer fermentum odio ut commodo ornare.</p>
-					<a href="#">Lanch project</a>
-				</div>
+				</div> -->
 			</div>
 			<!-- <button class="buy-btn buy-work">ЕЩЕ РАБОТЫ</button> -->
 		</div>
 	</div>
-	<div class="es-container_full market">
+	<!-- <div class="es-container_full market">
 		<div class="es-container_12">
 			<h2>MarketPlace</h2>
 			<div class="border"></div>
@@ -158,7 +158,7 @@
 			</div>
 			<button class="buy-btn buy-market">ПЕРЕЙТИ В MARKETPLACE</button>
 		</div>
-	</div>
+	</div> -->
 	<div class="footer es-container_full">
 		<div class="es-container_12">
 			<h2>Заполните форму</h2>
@@ -192,7 +192,8 @@
 		}
 
 		$(function() {
-			$('.market-list').on('click', '.market-item', function() {
+			$('.list').on('click', '.list-item', function() {
+				console.log($(this).find('img').attr('src'));
 				var _id = $(this).find('img').attr('src').replace('.jpg', 'L.jpg');
 				$('.popup-image').append(render(_id));
 				$('body').addClass('scrolldisable');
