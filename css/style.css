@@ -247,6 +247,7 @@ body {
 }
 .list-item {
 	width: 30%;
+	min-height: 540px;
 	float: left;
 	text-align: center;
 	padding-bottom: 40px;
@@ -282,6 +283,10 @@ body {
 	text-decoration: none;
 	font-family: 'RobotoB';
 	color: rgba(67,112,126,.6);
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	right: 0;
 }
 .list-item .container-img,
 .container-market {
