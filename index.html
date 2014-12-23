@@ -180,7 +180,7 @@
 						<input type="text" placeholder="Ваш телефон">
 						<input type="text" placeholder="Ваш e-mail (не обязательно)">
 						<textarea rows="4" placeholder="Текст вашего сообщения"></textarea>
-						<input type="submit" value="Отправить заявку">
+						<button type="submit">Отправить заявку</button>
 					</form>
 				</div>
 			</div>
@@ -191,10 +191,11 @@
 	</div>
 	<script type="text/javascript">
 
+		// mini template for popup
 		function render(_id) {
 			return $('<img/>', {src: _id})
 		}
-
+		//popups render, open, close
 		$(function() {
 			$('.list').on('click', '.list-item', function() {
 				console.log($(this).find('img').attr('src'));
@@ -210,6 +211,13 @@
 				$('.popup-image').find('img').remove();
 			});
 		})
+		//go to the page down when click buy button
+		$('.promo').on('click', '.buy-promo', function(){
+			$('html, body').animate({
+				scrollTop: $('.footer').offset().top
+			}, 500);
+		})
+
 	</script>
 </body>
 </html>
