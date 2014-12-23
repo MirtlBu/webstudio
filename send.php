@@ -1,5 +1,5 @@
 <?
-	$admintopmail="iralsob@gmail.com"; 
+	$admintopmail="team@epicsell.ru"; 
 	$date=date("d.m.y");  
 	$time=date("H:i");
 	$a = false;

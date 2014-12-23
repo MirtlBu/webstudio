@@ -184,13 +184,13 @@
 					<div class="email"> team@epicsell.ru</div>
 				</div>
 				<div class="rcolumn">
-				
+
 					<form action="send.php" method="post" id="form">
-						<input type="text" placeholder="Ваше имя" name="name">
-						<input type="text" placeholder="Ваш телефон" name="phone"> 
+						<input type="text" placeholder="Ваше имя" name="name" required>
+						<input type="text" placeholder="Ваш телефон" name="phone" required> 
 						<input type="text" placeholder="Ваш e-mail (не обязательно)" name="email">
-						<textarea rows="4" placeholder="Текст вашего сообщения" name="text"></textarea>
-						<input type="submit" value="Отправить заявку">
+						<textarea rows="4" placeholder="Текст вашего сообщения" name="text" required></textarea>
+						<button type="submit">Отправить заявку</button>
 
 					</form>
 				</div>
