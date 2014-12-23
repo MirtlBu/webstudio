@@ -18,6 +18,11 @@ body {
 	font-family: 'RobotoR';
 	height: 100%;
 }
+
+input, button {
+	outline: none;
+}
+
 .overlay {
 	background: rgba(0, 0, 0, .5);
 	width: 100%;
@@ -451,9 +456,10 @@ body {
 .rcolumn input:nth-child(2) {
 	margin-right: 11px;
 }
-.rcolumn input:last-child {
+.rcolumn button {
 	margin-bottom: 0;
 	width: 230px;
+	height: 42px;
 	text-transform: uppercase;
 	background: transparent;
 	outline: 0;
@@ -465,7 +471,7 @@ body {
 	bottom: 0;
 	right: 24px;
 }
-.rcolumn input:last-child:hover{
+.rcolumn button:hover{
 	background: #fdda00;
 	cursor: pointer;
 }
