@@ -1,33 +1,27 @@
-<?	
+<?
 	$admintopmail="iralsob@gmail.com"; 
 	$date=date("d.m.y");  
 	$time=date("H:i");
-	$a = array();
-	 
+	$a = false;
+
 	if($_SERVER['REQUEST_METHOD'] == 'POST'){
-		$name=$_POST['name'];  
-		$email=$_POST['email'];  
-		$phone=$_POST['phone'];
-		$text=$_POST['text'];
-	
-		if (!preg_match("|^([a-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})|is", 
-		strtolower($email))) { 
-			$a['success'] = false;
-			header('Location: index.html');
-			echo json_encode($a);
-		} else {  
+			$name=htmlspecialchars(trim($_POST['name']));  
+			$email=htmlspecialchars(trim($_POST['email']));  
+			$phone=htmlspecialchars(trim($_POST['phone']));
+			$text=htmlspecialchars($_POST['text']);
+
 			$msg="Новая заявка
-			Имя: $name 
-			E-mail: $email 
-			Телефон: $phone
-			Сообщение: $text"; 
-			
-			mail("$admintopmail", "$date $time Сообщение 
-			от $name", "$msg","Content-type: text/plain; charset=utf-8");
-			
-			$a['success'] = true;
+				Имя: $name 
+				E-mail: $email 
+				Телефон: $phone
+				Сообщение: $text"; 
+
+			if(mail("$admintopmail", "$date $time Сообщение от $name", "$msg","Content-type: text/plain; charset=utf-8")) {
+				$a = true;
+			} 
+
 			header('Location: index.html');
 			echo json_encode($a);
 		}
-	} 
+	}
 ?>
