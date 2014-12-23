@@ -15,6 +15,15 @@
 		      }, 1000);
 		      e.preventDefault();
 		   });
+		   function form_submitted(a) {
+                console.log(a);
+            }
+		   $( "#form" ).on("submit", function (event) {
+				event.preventDefault();
+				$.post( "send.php", $( "#form" ).serialize(), form_submitted);
+					this.reset();
+
+				});
 		   return false;
 		});
 	</script>
@@ -162,11 +171,11 @@
 					<div class="email"> team@epicsell.ru</div>
 				</div>
 				<div class="rcolumn">
-					<form>
-						<input type="text" placeholder="Ваше имя">
-						<input type="text" placeholder="Ваш телефон">
-						<input type="text" placeholder="Ваш e-mail (не обязательно)">
-						<textarea rows="4" placeholder="Текст вашего сообщения"></textarea>
+					<form action="send.php" method="post" id="form">
+						<input type="text" placeholder="Ваше имя" name="name">
+						<input type="text" placeholder="Ваш телефон" name="phone"> 
+						<input type="text" placeholder="Ваш e-mail (не обязательно)" name="email">
+						<textarea rows="4" placeholder="Текст вашего сообщения" name="text"></textarea>
 						<input type="submit" value="Отправить заявку">
 					</form>
 				</div>
