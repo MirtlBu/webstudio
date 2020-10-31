@@ -15,6 +15,13 @@
 		      }, 1000);
 		      e.preventDefault();
 		   });
+		   $('.btn--promo').bind("click", function(e){
+		      var anchor = $(this);
+		      $('html, body').stop().animate({
+		         scrollTop: $('.footer').offset().top
+		      }, 1000);
+		      e.preventDefault();
+		   });
 		   function form_submitted(a) {
                 console.log(a);
             }
@@ -29,14 +36,14 @@
 	</script>
 </head>
 <body>
-	<!-- <div class="overlay">
+	<div class="overlay">
 		<div class="popup">
 			<div class="popup-content">
 				<div class="popup-image"></div>
 				<a class="popup-close">×</a>
 			</div>
 		</div>
-	</div> -->
+	</div>
 	<div class="header">
 		<div class="es-container_12">
 			<div class="logo-wrap">
@@ -185,13 +192,13 @@
 
 					<form action="send.php" method="post" id="form">
 						<label for="name" class="label">Имя</label>
-						<input type="text" class="input" placeholder="Ваше имя" name="name" required>
+						<input type="text" class="input" placeholder="Ваше имя" name="name" id="name" required>
 						<label for="phone" class="label">Телефон</label>
-						<input type="text" class="input" placeholder="Ваш телефон" name="phone" required>
+						<input type="text" class="input" placeholder="Ваш телефон" name="phone" id="phone" required>
 						<label for="email" class="label">Почта</label> 
-						<input type="text" class="input" placeholder="Ваш e-mail (не обязательно)" name="email">
+						<input type="text" class="input" placeholder="Ваш e-mail (не обязательно)" name="email" id="email">
 						<label for="message" class="label">Сообщение</label>
-						<textarea rows="4" class="input input--textarea" placeholder="Текст вашего сообщения" name="message" required></textarea>
+						<textarea rows="4" class="input input--textarea" placeholder="Текст вашего сообщения" name="message" id="message" required></textarea>
 						<button type="submit" class="btn btn--footer">Отправить заявку</button>
 
 					</form>

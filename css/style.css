@@ -15,6 +15,7 @@
     src: url(../fonts/Roboto-Thin.ttf);
 }
 body {
+  font-size: 16px;
 	font-family: 'RobotoR';
 	height: 100%;
 }
@@ -27,7 +28,7 @@ p {
     line-height: 1.5 !important;
 }
 
-/*.overlay {
+.overlay {
 	background: rgba(0, 0, 0, .5);
 	width: 100%;
 	height: 100%;
@@ -75,37 +76,36 @@ p {
 }
 
 .popup-close {
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background: #ffffff;
 	position: absolute;
-	top: -5px;
-	right: -5px;
+	top: 8px;
+	right: 8px;
 	font-family: RobotoL;
 	font-size: 30px;
 	color: #323232;
 	text-align: center;
 	cursor: pointer;
 	z-index: 1000;
-}*/
+  line-height: 1;
+}
 
 .h3 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'RobotoB';
     text-transform: uppercase;
-    margin-top: 24px;
+    margin-top: 1.5rem;
 }
 
 .btn {
     background: transparent;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #fdda00;
     text-transform: uppercase;
     font-family: 'RobotoB';
     border: 2px solid #fdda00;
-    padding: 16px 32px 16px 32px;
+    padding: 1rem 2rem 1rem 2rem;
     cursor: pointer;
+    margin: auto;
+    display: block;
 }
 
 .promo {
@@ -114,18 +114,18 @@ p {
 }
 .pattern {
 	background:  url(../img/overlay-pattern.png);
-    padding-top: 80px;
-    padding-bottom: 120px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-top: 5rem;
+    padding-bottom: 7.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 .promo h1 {
 	font-family: 'RobotoB';
-	font-size: 38px;
+	font-size: 2.5rem;
 	text-transform: uppercase;
 	color: #fff;
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .promo h1:after {
@@ -133,23 +133,18 @@ p {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -24px;
+    bottom: -1.5rem;
     height: 2px;
-    width: 120px;
+    width: 7.5rem;
     margin: 0 auto;
     background-color: #fdda00;
 }
 .promo p {
-	font-size: 16px;
+	font-size: 1rem;
 	color: #fff;
 	font-family: 'RobotoL';
-    padding-top: 24px;
-    margin-bottom: 40px;
-}
-
-.btn--promo {
-    background: #fdda00;
-    color: #43707e;
+    padding-top: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .promo-wrap {
@@ -159,10 +154,10 @@ p {
 .promo-footer{
 	background: rgba(255,255,255,.5);
 	text-align: center;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 80px;
-    padding-bottom: 120px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 7.5rem;
     position: relative;
 
 }
@@ -171,20 +166,20 @@ p {
 	height: 25px;
 	background: url(../img/arrow.png) no-repeat;
 	position: absolute;
-	bottom: 24px;
+	bottom: 1.5rem;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
 }
 .gift-image {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
     background: #fdda00;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 16px;
     position: absolute;
-    top: -40px;
+    top: -2.5rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -198,7 +193,7 @@ p {
     border-top: 2px solid #fdda00;
 	display: inline-block;
 	position: relative;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-family: RobotoL;
 	color: #323232;
 	text-transform: uppercase;
@@ -207,10 +202,10 @@ p {
 	-webkit-font-smoothing: antialiased;
 }
 .header {
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 	background: #fff;
 }
 .border {
@@ -220,23 +215,18 @@ p {
 }
 .works,
 .market, .footer {
-    padding-top: 80px;
-    padding-bottom: 120px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-top: 5rem;
+    padding-bottom: 7.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 	display: inline-block;
     box-sizing: border-box;
 }
-.buy-btn{
-	cursor: pointer;
-	height: 40px;
-}
-.buy-header {
-	float: right;
-	border: 0;
-	background: #43707e;
-	outline: 0;
-	margin: 15px 0;
+.works p, .market p, .footer p {
+  text-align: center;
+  padding-top: 2rem;
+  font-family: 'RobotoL';
+  font-size: 0.875rem;
 }
 .logo-wrap {
 	float: left;
@@ -252,21 +242,21 @@ p {
 	font-family: RobotoB;
 }
 .list {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 .list-item:last-child {
     margin-bottom: 0;
 }
 .list-item {
-    max-width: 320px;
-	border: 1px solid #f5f6f6;
-	position: relative;
-    margin-bottom: 24px;
+    max-width: 20rem;
+  	border: 1px solid #f5f6f6;
+  	position: relative;
+    margin-bottom: 1.5rem;
     display: inline-block;
     vertical-align: top;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 .list-item:hover {
 	cursor: pointer;
@@ -274,14 +264,15 @@ p {
 }
 .list-item img {
 	width: 100%;
+  display: block;
 }
 
 .list-item h3 {
 	color: #43707e;
 }
 .list-item p {
-	padding: 16px 24px 24px 24px;
-	font-size: 14px;
+	padding: 1rem 1.5rem 3.5rem 1.5rem;
+	font-size: 0.875rem;
 	font-family: 'RobotoL';
 }
 .list-item:hover p {
@@ -289,10 +280,10 @@ p {
 }
 
 .list-link {
-        margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 .list-item a {
-	font-size: 14px;
+	font-size: 0.875rem;
 	text-decoration: none;
 	font-family: 'RobotoB';
 	color: rgba(67,112,126,.6);
@@ -317,7 +308,7 @@ p {
 .h2 {
     text-align: center;
     font-family: 'RobotoB';
-    font-size: 24px;
+    font-size: 1.5rem;
     text-transform: uppercase;
     position: relative;
 }
@@ -327,9 +318,9 @@ p {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -16px;
+    bottom: -1rem;
     height: 2px;
-    width: 120px;
+    width: 7.5rem;
     margin: 0 auto;
     background-color: #fdda00;
 }
@@ -340,38 +331,21 @@ p {
 .works-wrap {
 	text-align: center;
 }
-.works p, .market p, .footer p {
-	text-align: center;
-    padding-top: 32px;
-	font-family: 'RobotoL';
-	font-size: 14px;
-}
-.buy-work {
-	padding: 8px 40px;
-	background: transparent;
-	outline: 0;
-	height: auto;
-	border: 2px solid #fdda00;
-	display: block;
-	font-family: 'RobotoB';
-	color: #43707e;
-	font-size: 14px;
-    margin: 0 auto;
-}
-.btn--work:hover {
-	background: #fdda00;
+
+.btn--work:hover, .btn--footer:hover {
+    background: #fdda00;
     color: #ffffff;
 }
 .market {
 	text-align: center;
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: #fff;
 	font-family: 'RobotoL';
 	background: radial-gradient(rgba(253,218,0,.15), transparent), #43707e;
 }
 .market-list {
-	margin-top: 40px;
-    margin-bottom: 40px;
+	margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 .market-item .container-market div {
 	position: absolute;
@@ -383,20 +357,20 @@ p {
 	display: none;
 }
 .market-item .container-market {	
-	margin-bottom: 16px;
+	margin-bottom: 1rem;
 }
 .market-item:hover .container-market div {
 	display: block;
 	cursor: pointer;
 }
 .market-item {
-    max-width: 320px;
+    max-width: 20rem;
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     display: inline-block;
     vertical-align: top;
-    margin-right: 24px;
-    margin-left: 24px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
 }
 .market-item img{
 	width: 100%;
@@ -405,27 +379,14 @@ p {
 .market .h2 {
 	color: #fff;
 }
-.buy-market {
-	width: auto;
-	padding: 10px 15px;
-	background: transparent;
-	outline: 0;
-	height: auto;
-	border: 2px solid #fdda00;
-	margin: 15px auto 50px;
-	display: block;
-	font-family: 'RobotoB';
-	color: #fdda00;
-	font-size: 14px;
-}
-.btn--market:hover {
+.btn--market:hover, .btn--promo:hover {
 	background: #fdda00;
 	color: #43707e;
 }
 
 .container-market {
     background-color: rgba(255,255,255, .2);
-    padding-bottom: 24px;
+    padding-bottom: 1.5rem;
 }
 
 .footer {
@@ -439,15 +400,16 @@ p {
 }
 
 .input {
-	width: 100%;
-	height: 42px;
-	border: 1px solid rgba(67,122,126,.11);
-	color: #323232;
+  	width: 100%;
+  	height: 2.625rem;
+  	border: 1px solid rgba(67,122,126,.11);
+  	color: #323232;
     font-family: 'RobotoL';
     font-size: 12px;
-    margin-top: 8px;
-    margin-bottom: 24px;
-    padding-left: 8px;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+    box-sizing: border-box;
 }
 .input:focus {
     box-shadow: inset 0px 0px 0px 1px rgba(175, 195, 200, 1);
@@ -455,8 +417,10 @@ p {
 }
 
 .input--textarea {
+    height: auto;
     resize: none;
-    line-height: 42px;
+    line-height: 2.625rem;
+    margin-bottom: 2.5rem;
 }
 
 .label {
@@ -465,19 +429,19 @@ p {
     font-size: 12px;
 }
 .contacts {
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .contacts__item {
-    padding-left: 40px;
-    margin-bottom: 24px;
+    padding-left: 2.5rem;
+    margin-bottom: 1.5rem;
     font-family: 'RobotoL';
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #43707e;
 }
 
 .lcolumn {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 div.phone {
@@ -518,6 +482,80 @@ div.address {
     }
 
     .list-item {
-       
+       min-height: 640px;
     }
+
+    .list-link {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .lcolumn, .rcolumn {
+      width: 20rem;
+      margin: 0 auto;
+    }
+
+    .lcolumn {
+      margin-bottom: 2.5rem;
+    }
+
+    .input {
+      width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px !important;
+  }
+
+  .header, .pattern, .promo-footer, .works, .market, .footer {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .pattern, .promo-footer, .works, .market, .footer {
+    padding-top: 7.5rem;
+    padding-bottom: 10rem;
+  }
+
+  .header {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .list-item {
+       min-height: 680px;
+    }
+
+  .contacts {
+      text-align: center;
+  }
+
+  .lcolumn, .rcolumn {
+      vertical-align: top;
+      display: inline-block;
+      text-align: left;
+  }
+
+  .lcolumn {
+    margin-right: 2.5rem;
+  }
+
+  .btn--footer {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header, .pattern, .promo-footer, .works, .market, .footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .pattern {
+    padding-top: 10rem;
+    padding-bottom: 12.5rem;
+  }
 }
