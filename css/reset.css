@@ -70,7 +70,7 @@ table {
 .es-container_12 {
   margin-left: auto;
   margin-right: auto;
-  max-width: 960px;
+  /*max-width: 960px;*/
 }
 .es-container_12:before,
 .es-container_12:after {
